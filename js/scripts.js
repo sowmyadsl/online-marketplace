@@ -1,77 +1,27 @@
-// Business (or back-end) logic:
+$(function() {
+  $("#purchase").submit(function(event) {
+    var productInput = $("input#product").val();
+    var quantityInput = $("input#quantity").val();
+    var notesInput = $("input#notes").val();
 
-var add = function(number1, number2) {
-  return number1 + number2;
-};
-var subtract = function(number1, number2) {
-  return number1 - number2;
-};
-var multiply = function(number1, number2) {
-  return number1 * number2;
-};
-var divide = function(number1, number2) {
-  return number1 / number2;
-};
-
-// User interface (or front-end) logic:
-
-$(document).ready(function(){
-  $("form#add").submit(function(event){
-  var number1 = parseInt($("#add1").val());
-  var number2 = parseInt($("#add2").val());
-
-  var result = add(number1, number2);
-
-  $("#output").text(result);
-  event.preventDefault();
+    $("#text1").text(productInput);
+    $("#text2").text(quantityInput);
+    $("#text3").text(notesInput);
+    $("#purchase-form").hide();
+    $("#shipping-form").show();
+    event.preventDefault();
   });
+  $("#shipping").submit(function(event) {
+    var nameInput = $("input#name").val();
+    var addressInput = $("input#address").val();
+    var shippingInput = $("input:radio[name=shipping]:checked").val();
 
-  $("form#subtract").submit(function(event){
-  var number1 = parseInt($("#subtract1").val());
-  var number2 = parseInt($("#subtract2").val());
+    $("#text4").text(nameInput);
+    $("#text5").text(addressInput);
+    $("#text6").text(shippingInput);
 
-  var result = subtract(number1, number2);
-
-  $("#output").text(result);
-  event.preventDefault();
-  });
-
-  $("form#multiply").submit(function(event){
-  var number1 = parseInt($("#multiply1").val());
-  var number2 = parseInt($("#multiply2").val());
-
-  var result = multiply(number1, number2);
-
-  $("#output").text(result);
-  event.preventDefault();
-  });
-
-  $("form#divide").submit(function(event){
-  var number1 = parseInt($("#divide1").val());
-  var number2 = parseInt($("#divide2").val());
-
-  var result = divide(number1, number2);
-
-  $("#output").text(result);
-  event.preventDefault();
+    $("#shipping-form").hide();
+    $("#receipt").show();
+    event.preventDefault();
   });
 });
-
-
-// var number1 = parseInt(prompt("Enter a number:"));
-// var operator = prompt("Enter the operator: ('add', 'subtract', 'multiply', 'divide')").toLowerCase();
-// var number2 = parseInt(prompt("Enter another number:"));
-
-// if (operator == "add"){
-//   alert( add(number1 ,number2));
-// }else if (operator == "subtract"){
-//   alert(subtract(number1,number2));
-// }else if (operator =="multiply"){
-//   alert(multiply(number1,number2));
-// }else if (operator =="divide"){
-//   alert(divide(number1,number2));
-// }else {
-// alert("wrong input");
-// }
-// var result = divide(number1, number2);
-// alert(result);

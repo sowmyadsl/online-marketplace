@@ -1,4 +1,12 @@
-#output {
-  margin : 20px;
-  font-size: 100px;
+
+.radio{
+margin:20px;
+font-size:20px;}
+
+#shipping-form {
+  display: none;
+}
+
+#receipt {
+  display: none;
 }

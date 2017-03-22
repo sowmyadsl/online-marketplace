@@ -9,7 +9,9 @@
   </head>
   <body>
     <div class="container">
-      <h1>Welcome to our store!</h1>
+      <div class="jumbotron">
+        <h1>Vintage Chic - Online Store</h1>
+      </div>
       <div id="purchase-form">
         <form id="purchase">
           <div class="form-group">
@@ -39,9 +41,15 @@
             <input id="address" class="form-control" type="text">
           </div>
           <div class="radio">
-            <input type="radio" name="shipping" value="ups-ground"checked >Ground</label>
-            <input type="radio" name="shipping" value="ups-one-day"checked >Next day</label>
-            <input type="radio" name="shipping" value="ups-two-day" checked>Two day</label>
+            <label>
+              <input class="radio-style" type="radio" name="shipping" value="ups-ground"checked >Ground</input>
+          </label>
+          <label>
+            <input class="radio-style" type="radio" name="shipping" value="ups-one-day"checked >Next day</input>
+          </label>
+          <label>
+            <input class="radio-style" type="radio" name="shipping" value="ups-two-day" checked>Two day</input>
+          </label>  
           </div>
 
           <button type="submit" class="btn">Submit Order</button>

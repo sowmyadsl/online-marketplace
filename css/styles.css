@@ -1,7 +1,23 @@
+body {
+  background-color: rgba(190, 190, 190, 0.3);
+}
+.jumbotron {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/88/c8/62/88c86249cb1abe1ebc582e876af2c81d.jpg");
+  color: white;
 
-.radio{
-margin:20px;
-font-size:20px;}
+}
+
+
+.btn {
+  background-color: rgba(100, 200, 160, 0.5);
+}
+
+.radio {
+  text-align: center;
+}
+.radio-style{
+  font-size: 30px;
+}
 
 #shipping-form {
   display: none;
@@ -9,4 +25,6 @@ font-size:20px;}
 
 #receipt {
   display: none;
+  border: dashed 1px black;
+  padding: 20px;
 }

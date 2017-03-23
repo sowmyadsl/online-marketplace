@@ -12,12 +12,51 @@
       <div class="jumbotron">
         <h1>Vintage Chic - Online Store</h1>
       </div>
-      <div id="purchase-form">
-        <form id="purchase">
+      <div class="container">
+      <div class="row">
+       <div class="col-md-4">
+         <div class="panel panel-danger">
+       <div class="panel-heading">Vintage Chair</div>
+       <div class="panel-body">
+              <img src="img/vintage1.jpg" alt="beautiful chair" height="250px" width="250px">
+              <p>A 1900's Vintage Chair</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-danger">
+  <div class="panel-heading">Vintage Wardrobe</div>
+  <div class="panel-body">
+         <img src="img/vintage3.jpg" alt="beautiful chair" height="250px" width="250px">
+         <p>A 1780's Vintage wardrobe </p>
+
+       </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-danger">
+    <div class="panel-heading">Vintage Enamelware</div>
+    <div class="panel-body">
+           <img src="img/vintage4.jpg" alt="beautiful chair" height="250px" width="250px">
+           <p>90's  enamelware on sale !! </p>
+
+         </div>
+        </div>
+      </div>
           <div class="form-group">
             <label for="product">Product Name:</label>
             <input id="product" class="form-control" type="text">
           </div>
+          <div class="Check-box">
+            <label for="category">Category:</label>
+          <select class="form-control" id="category">
+
+            <option value="1">Furniture</option>
+            <option value="2">Collectibles</option>
+            <option value="3">Cookware</option>
+            <option value="4">Jewellery</option>
+          </select>
+        </div>
           <div class="form-group">
             <label for="quantity">Quantity:</label>
             <input id="quantity" class="form-control" type="text">
@@ -49,7 +88,7 @@
           </label>
           <label>
             <input class="radio-style" type="radio" name="shipping" value="ups-two-day" checked>Two day</input>
-          </label>  
+          </label>
           </div>
 
           <button type="submit" class="btn">Submit Order</button>

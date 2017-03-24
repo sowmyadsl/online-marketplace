@@ -19,10 +19,6 @@ body {
   font-size: 30px;
 }
 
-#shipping-form {
-  display: none;
-}
-
 #receipt {
   display: none;
   border: dashed 1px black;

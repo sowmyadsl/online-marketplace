@@ -1,111 +1,99 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.2.0.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Vintage Chic - Online Store</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h1>Vintage Chic - Online Store</h1>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.2.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Vintage Chic - Online Store</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Vintage Chic - Online Store</h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="panel panel-danger">
+          <div class="panel-heading">Vintage Chair</div>
+          <div class="panel-body">
+            <img src="img/vintage1.jpg" alt="beautiful chair" height="250px" width="250px">
+            <p>A 1900's Vintage Chair</p>
+          </div>
+        </div>
       </div>
-      <div class="container">
-      <div class="row">
-       <div class="col-md-4">
-         <div class="panel panel-danger">
-       <div class="panel-heading">Vintage Chair</div>
-       <div class="panel-body">
-              <img src="img/vintage1.jpg" alt="beautiful chair" height="250px" width="250px">
-              <p>A 1900's Vintage Chair</p>
+      <div class="col-md-4">
+        <div class="panel panel-danger">
+          <div class="panel-heading">Vintage Wardrobe</div>
+          <div class="panel-body">
+            <img src="img/vintage3.jpg" alt="beautiful chair" height="250px" width="250px">
+            <p>A 1780's Vintage wardrobe </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-danger">
+          <div class="panel-heading">Vintage Enamelware</div>
+          <div class="panel-body">
+            <img src="img/vintage4.jpg" alt="beautiful chair" height="250px" width="250px">
+            <p>90's enamelware on sale !! </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-md-4">
-    <div class="panel panel-danger">
-  <div class="panel-heading">Vintage Wardrobe</div>
-  <div class="panel-body">
-         <img src="img/vintage3.jpg" alt="beautiful chair" height="250px" width="250px">
-         <p>A 1780's Vintage wardrobe </p>
 
-       </div>
+  <div class="well">
+    <h2>Purchase Order Form</h2>
+    <form id="formOrder">
+      <div class="form-group">
+        <label for="first-name">First Name:</label>
+        <input id="first-name" class="form-control" type="text">
       </div>
+      <div class="form-group">
+        <label for="last-name">Last Name:</label>
+        <input id="last-name" class="form-control" type="text">
+      </div>
+
+      <label>Category:</label>
+      <select class="form-control" input id="category">
+        <option>Furniture</option>
+        <option>Collectibles</option>
+        <option>Cookware</option>
+        <option>Jewellery</option>
+      </select>
+      <div class="form-group">
+        <label for="product-name">Product Name:</label>
+        <input id="product-name" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <input id="quantity" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="shipping-address">Shipping address:</label>
+        <input id="shipping-address" class="form-control" type="text">
+      </div>
+
+      <button type="submit" class="btn"> Order</button>
+    </form>
     </div>
-    <div class="col-md-4">
-      <div class="panel panel-danger">
-    <div class="panel-heading">Vintage Enamelware</div>
-    <div class="panel-body">
-           <img src="img/vintage4.jpg" alt="beautiful chair" height="250px" width="250px">
-           <p>90's  enamelware on sale !! </p>
 
-         </div>
-        </div>
-      </div>
-          <div class="form-group">
-            <label for="product">Product Name:</label>
-            <input id="product" class="form-control" type="text">
-          </div>
-          <div class="Check-box">
-            <label for="category">Category:</label>
-          <select class="form-control" id="category">
 
-            <option value="1">Furniture</option>
-            <option value="2">Collectibles</option>
-            <option value="3">Cookware</option>
-            <option value="4">Jewellery</option>
-          </select>
-        </div>
-          <div class="form-group">
-            <label for="quantity">Quantity:</label>
-            <input id="quantity" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="notes">Notes:</label>
-            <input id="notes" class="form-control" type="text">
-          </div>
-          <button type="submit" class="btn">Submit Order</button>
-        </form>
-      </div>
-
-      <div id="shipping-form">
-        <form id="shipping">
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input id="name" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="address">Shipping Address:</label>
-            <input id="address" class="form-control" type="text">
-          </div>
-          <div class="radio">
-            <label>
-              <input class="radio-style" type="radio" name="shipping" value="ups-ground"checked >Ground</input>
-          </label>
-          <label>
-            <input class="radio-style" type="radio" name="shipping" value="ups-one-day"checked >Next day</input>
-          </label>
-          <label>
-            <input class="radio-style" type="radio" name="shipping" value="ups-two-day" checked>Two day</input>
-          </label>
-          </div>
-
-          <button type="submit" class="btn">Submit Order</button>
-        </form>
-      </div>
-
+    <div class="container">
       <div id="receipt">
-        <h1>Order Receipt </h1>
-       <div class="output">
-        <h3 id="text1"></h3>
-        <h3 id="text2"></h3>
-        <h3 id="text3"></h3>
-        <h3 id="text4"></h3>
-        <h3 id="text5"></h3>
-        <h3 id="text6"></h3>
-       </div>
+        <p>Thank you for your order, <span id="text1"></span> <span id="text2"></span>!</p>
+          <p>Your <span id="text3"></span> will ship in the next 2-3 business days.</p>
+          <br>
+          <p>Shipping Address:</p>
+          <p><span id="text4"></span> <span id="text5"></span></p>
+          <p><span id="text6"></span></p>
       </div>
     </div>
+
   </body>
-</html>
+
+  </html>
